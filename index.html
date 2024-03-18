@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematyka</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+    
+    <div class="gora">
+    <img src="matma.jpg">
+    <h1>Strona z zadaniami</h1>
+    <br>
+    <h2>Klasa 2</h2>
+    </div>
+    <br>
+    <div class="zad">
+        <br>
+    <h3>Zadania i ćwiczenia z matematyki - klasa 2</h3>
+    <br>
+    <div class="zadania">
+    <a href="zad1.html">Dodawanie liczb do 50</a>
+    <br>
+    <a href="zad2.html">Odejmowanie liczb do 50</a>
+    <br>
+    <a href="zad3.html">Tabliczka mnożenia do 20</a>
+    <br>
+    <a href="zad4.html">Tabliczka dzielenie do 20</a>
+    <br>
+    <a href="zad5.html">Znak większości i mniejszości (do 50)</a>
+</div>
+    <img src="majca-removebg-preview.png">
+</div>
+        
+<div class="zegar">
+    <span id="hrs">00</span>
+    <span>:</span>
+    <span id="min">00</span>
+    <span>:</span>
+    <span id="sec">00</span>
+    </div>
+    <script>
+        let hrs=document.getElementById("hrs");
+        let min=document.getElementById("min");
+        let sec=document.getElementById("sec");
+        setInterval(()=>{
+            let currentTime= new Date();
+
+        hrs.innerHTML=(currentTime.getHours()<10?"0":"") + currentTime.getHours();
+        min.innerHTML=(currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();;
+        sec.innerHTML=(currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();;
+        },1000)
+       
+    </script>
+
+   <footer>
+    Autor strony: Dominik Rzepka
+   </footer>
+
+
+</body>
+</html>

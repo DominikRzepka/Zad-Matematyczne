@@ -1,0 +1,100 @@
+*
+{
+    margin:0;
+    
+}
+body{
+    background-image: url(tlo.jpg);
+    color:white;
+    font-size:40px;
+}
+h1{
+    font-size:40px;
+    text-align: center;
+    color:blue;
+    float:middle;
+    
+}
+h2{
+    font-size:30px;
+    text-align: center;
+    color:blue;
+}
+img{
+    width:100px;
+    height:100px;
+    margin:10px;
+    float:left;
+}
+h3{
+    color:black;
+    font-size:20px;
+    text-align: center;
+}
+.dzialania
+{
+    margin-left:750px;
+}
+.flat
+{
+    display:flex;
+    
+}
+#p1,#p2
+{
+    padding:10px;
+    text-align: center;
+    padding-right:100px;
+    color:blue;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+#d
+
+{
+   
+    text-align: center;
+    color:blue;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+p{
+    color:blue;
+}
+input[type='text']{
+    width:40px;
+
+}
+#xd{
+    font-size:20px;
+}
+#p3, #p4{
+    
+    text-align: center;
+    
+    color:blue;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+.main
+{
+    background-color: rgb(64, 187, 255);
+    background: linear-gradient(90deg, rgba(64,187,220,1) 0%, rgba(100,255,255,0.93) 30%, rgba(0,212,255,1) 100%);
+    width:600px;
+    height: 100px;
+    float:middle;
+    border: 4px solid lightblue;
+    margin-left:560px;
+    border-radius: 20px;
+    position: absolute;
+    top:80%;
+    
+}
+a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    margin-left:100px;
+    position: absolute;
+    top:20%;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+    <div class="gora">
+        <img src="matma.jpg">
+        <h1>Znak '>' lub '<'</h1>
+        <br>
+        <div class="dzialania">
+        <button onclick="losuj()" id="p1">Losuj</button>
+        <br>
+        <p id="xd">W zależności od tego,<br>     która liczba jest większa,<br> wpisz znak '>' lub '<'</p>
+        
+        <div class="flat">
+        <p id="a">?</p>
+        <button type="button" id="p3" onclick="sprawdz()">></button>
+        <button type="button" id="p4" onclick="sprawdz2()"><</button>
+        <p id="b">?</p>
+        
+        
+       
+        </div>
+        
+        
+        <br>
+        <p id="e"></p>
+    </div>
+
+        <script>
+            function losuj(){
+            do{
+                a=Math.floor(Math.random()*51);
+                b=Math.floor(Math.random()*51);
+            }
+            while(a+b>100);
+            document.getElementById("a").innerHTML=a;
+            document.getElementById("b").innerHTML=b;
+        }
+        
+        function sprawdz(){
+            if(a>b)
+            document.getElementById("e").innerHTML="<img src='dobrze.png'>";
+            else
+            document.getElementById("e").innerHTML="<img src='zle.png'>";
+        }
+        function sprawdz2(){
+            if(a<b)
+            document.getElementById("e").innerHTML="<img src='dobrze.png'>";
+            else
+            document.getElementById("e").innerHTML="<img src='zle.png'>";
+        }
+        </script>
+         <div class="main">
+          
+            <a href="main.html">Wróć do strony głównej</a>
+            </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+    <div class="gora">
+        <img src="matma.jpg">
+        <h1>Dodawanie do 50</h1>
+        <br>
+        <div class="dzialania">
+        <button onclick="losuj()" id="p1">Losuj</button>
+        <br><br>
+        <div class="flat">
+        <p id="a">?</p>
+        <p>+</p>
+        <p id="b">?</p>
+        <p>=</p>
+        <p id="wynik"></p>
+        <input id="d" type="number"><br><br>
+        </div>
+        <br>
+        <button onclick="sprawdz()" id="p2">Sprawdź</button>
+        <br>
+        <p id="e"></p>
+    </div>
+
+        <script>
+            function losuj(){
+            do{
+                a=Math.floor(Math.random()*51);
+                b=Math.floor(Math.random()*51);
+            }
+            while(a+b>50);
+            document.getElementById("a").innerHTML=a;
+            document.getElementById("b").innerHTML=b;
+        }
+        
+        function sprawdz(){
+            d=document.getElementById("d").value;
+            if(d==a+b)
+            document.getElementById("e").innerHTML="<img src='dobrze.png'>";
+            else if(d=="")
+            document.getElementById("e").innerHTML="Nic nie wpisałeś";
+            else
+            document.getElementById("e").innerHTML="<img src='zle.png'>";
+        }
+        </script>
+
+        <div class="main">
+          
+        <a href="main.html">Wróć do strony głównej</a>
+        </div>
+</body>
+</html>
